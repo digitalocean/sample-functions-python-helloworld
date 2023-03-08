@@ -1,5 +1,8 @@
 packages:
   - name: sample
     actions:
-      - name: hello
+      - name: worker
         runtime: 'python:default'
+    requires:
+          pip:
+            - aiohttp
